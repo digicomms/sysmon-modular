@@ -1,0 +1,10 @@
+<Sysmon schemaversion="4.30">
+<EventFiltering>
+<RuleGroup name="" groupRelation="or">
+    <ProcessCreate onmatch="exclude">
+        <ParentImage condition="is">C:\Program Files\erl10.2\erts-10.2\bin\erl.exe</ParentImage>
+        <ParentImage condition="is">F:\Program Files\erl9.3\erts-9.3\bin\erl.exe</ParentImage>
+	</ProcessCreate>
+</RuleGroup>
+</EventFiltering>
+</Sysmon>
